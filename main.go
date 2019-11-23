@@ -15,8 +15,13 @@ limitations under the License.
 */
 package main
 
-import "github.com/dashotv/blaze/cmd"
+import (
+	"github.com/dashotv/blaze/cmd"
+	"github.com/sirupsen/logrus"
+)
 
 func main() {
-  cmd.Execute()
+	logrus.SetLevel(logrus.InfoLevel)
+	logrus.SetFormatter(&logrus.TextFormatter{})
+	cmd.Execute()
 }
