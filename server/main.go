@@ -12,7 +12,7 @@ import (
 type Server struct {
 	URL     string
 	merc    *mercury.Mercury
-	channel chan *mercury.Message
+	channel chan *flame.Response
 	client  *flame.Client
 }
 
@@ -25,7 +25,7 @@ func New(URL string) (*Server, error) {
 		return nil, err
 	}
 
-	s.channel = make(chan *mercury.Message, 5)
+	s.channel = make(chan *flame.Response, 5)
 	if err := s.merc.Sender("blaze", s.channel); err != nil {
 		return nil, err
 	}
@@ -53,17 +53,12 @@ func (s *Server) Start() error {
 
 func (s *Server) Sender() {
 	logrus.Info("sending message")
+
 	resp, err := s.client.List()
 	if err != nil {
 		logrus.Errorf("flame list error: %s", err)
 		return
 	}
 
-	str, err := resp.JSON()
-	if err != nil {
-		logrus.Errorf("flame json error: %s", err)
-		return
-	}
-
-	s.channel <- &mercury.Message{Content: str, Sender: "blaze"}
+	s.channel <- resp
 }
