@@ -52,7 +52,7 @@ func (s *Server) Start() error {
 }
 
 func (s *Server) Sender() {
-	logrus.Info("sending message")
+	logrus.WithField("prefix", "genma").Info("sending message")
 
 	resp, err := s.client.List()
 	if err != nil {
