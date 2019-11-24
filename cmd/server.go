@@ -29,7 +29,10 @@ var serverCmd = &cobra.Command{
 	Short: "run the server",
 	Long:  "run the server",
 	Run: func(cmd *cobra.Command, args []string) {
-		s, err := server.New(viper.GetString("url"))
+		url := viper.GetString("url")
+		mode := viper.GetString("mode")
+		port := viper.GetInt("port")
+		s, err := server.New(url, mode, port)
 		if err != nil {
 			logrus.Fatalf("error: %s", err)
 		}
