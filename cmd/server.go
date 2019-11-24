@@ -16,11 +16,11 @@ limitations under the License.
 package cmd
 
 import (
-	"github.com/dashotv/blaze/server"
-	"github.com/spf13/viper"
-
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
+	"github.com/spf13/viper"
+
+	"github.com/dashotv/blaze/server"
 )
 
 // serverCmd represents the server command

@@ -7,15 +7,15 @@ import (
 	"os"
 	"time"
 
-	"github.com/dashotv/blaze/server/torrents"
-	"github.com/dashotv/flame"
-	"github.com/dashotv/mercury"
-
 	"github.com/gin-gonic/gin"
 	"github.com/go-redis/redis/v7"
 	"github.com/nats-io/nats.go"
 	"github.com/robfig/cron/v3"
 	"github.com/sirupsen/logrus"
+
+	"github.com/dashotv/blaze/server/torrents"
+	"github.com/dashotv/flame"
+	"github.com/dashotv/mercury"
 )
 
 type Server struct {
