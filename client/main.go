@@ -6,12 +6,11 @@ import (
 	"sort"
 	"time"
 
-	"github.com/sirupsen/logrus"
-
 	"github.com/dashotv/flame"
 	"github.com/dashotv/mercury"
 
 	"github.com/nats-io/nats.go"
+	"github.com/sirupsen/logrus"
 )
 
 type TorrentsByIndex []flame.Torrent
