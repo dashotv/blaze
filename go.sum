@@ -18,6 +18,8 @@ github.com/coreos/pkg v0.0.0-20180928190104-399ea9e2e55f/go.mod h1:E3G3o1h8I7cfc
 github.com/cpuguy83/go-md2man v1.0.10/go.mod h1:SmD6nW6nTyfqj6ABTjUi3V3JVMnlJmwcJI5acqYI6dE=
 github.com/dashotv/flame v0.1.0 h1:2xXwmU0msk/EvkWeVYF7P840KrcCja9Uy2i1ma0YvSo=
 github.com/dashotv/flame v0.1.0/go.mod h1:5YuBWlRa6D3EMqSxTeHY8uFAZxSzYloHf4hTbrX8Clw=
+github.com/dashotv/flame v0.1.1 h1:eFk+k50IP8zRBbpSRG1uI+Es4nwYEBhUFcD8IUOO6oI=
+github.com/dashotv/flame v0.1.1/go.mod h1:5YuBWlRa6D3EMqSxTeHY8uFAZxSzYloHf4hTbrX8Clw=
 github.com/dashotv/mercury v0.0.0-20191123112423-0a4863e890cd h1:dvozsbK7TJrfE8h/KsxGStvzzpBjs45uDPgnjAyUEvw=
 github.com/dashotv/mercury v0.0.0-20191123112423-0a4863e890cd/go.mod h1:UXr9BvK+CJ6Ohedvx1gizYLsEAiD7ETHZMWQQ6XI21E=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=

@@ -3,7 +3,7 @@ module github.com/dashotv/blaze
 go 1.13
 
 require (
-	github.com/dashotv/flame v0.1.0
+	github.com/dashotv/flame v0.1.1
 	github.com/dashotv/mercury v0.0.0-20191123112423-0a4863e890cd
 	github.com/gin-gonic/gin v1.5.0
 	github.com/go-playground/universal-translator v0.17.0 // indirect
